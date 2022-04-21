@@ -36,7 +36,7 @@ http://dongmanshe.net//sys/auth.php?mode=token_get&token=你的token
 	"joining": "注册时间",
 	"activetime": "最后活跃时间",
 	"Checktime": "签到时间",
-	"postend": 最后活动的帖子,
+	"postend": "最后活动的帖子",
 	"token": "你的token"
 }]
 ```
