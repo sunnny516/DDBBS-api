@@ -19,3 +19,24 @@ http://dongmanshe.net/sys/auth.php?mode=reg&username=用户名&password=密码
 http://dongmanshe.net/sys/auth.php?mode=token&username=用户名&password=密码
 ```
 服务器返回 一串字符则是你的token
+
+
+## 使用Token获取用户信息
+使用get提交你的token
+```bash
+http://dongmanshe.net//sys/auth.php?mode=token_get&token=你的token
+```
+服务器返回Json(json以后可能有变化)
+```bash
+[{
+	"uid": "用户ID",
+	"name": "用户名",
+	"avater": "头像",
+	"star": "星星",
+	"joining": "注册时间",
+	"activetime": "最后活跃时间",
+	"Checktime": "签到时间",
+	"postend": 最后活动的帖子,
+	"token": "你的token"
+}]
+```
