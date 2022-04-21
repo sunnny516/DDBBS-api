@@ -3,3 +3,19 @@
 ## 前言废话
 + 打造一个简单的纯粹的二刺螈社区,就类似A岛那样的吧
 + 前端是打算开源了,我尝试自己写了个手机段客户端,写的很屎,所以说有大佬可以开发第三方的手机电脑客户端也是可以的
+
+
+## 注册&登录方法
+使用get提交你的账号
+```bash
+http://dongmanshe.net/sys/auth.php?mode=reg&username=用户名&password=密码
+```
+服务器返回606 或者 602 即代表账号注册成功
+
+
+## 获取Token
+使用get提交你的账号,获取token,token是账号的主要凭证
+```bash
+http://dongmanshe.net/sys/auth.php?mode=token&username=用户名&password=密码
+```
+服务器返回 一串字符则是你的token
